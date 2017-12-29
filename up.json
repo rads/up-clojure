@@ -1,0 +1,10 @@
+{
+  "name": "up-clojure",
+  "lambda": {
+    "memory": 1536
+  },
+  "hooks": {
+    "build": "lein do pom, uberjar && cp target/server.jar .",
+    "clean": "lein clean && rm server.jar"
+  }
+}
